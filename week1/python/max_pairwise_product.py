@@ -1,17 +1,22 @@
 # Uses python3
-n = int(input())
-a = [int(x) for x in input().split()]
-assert(len(a) == n)
 
-def pairwiseProduct():
+def pairwiseProduct(size, numbers):
     result = 0
 
-    for i in range(0, n):
-        for j in range(i+1, n):
-            if a[i]*a[j] > result:
-                result = a[i]*a[j]
+    for i in range(0, size):
+        for j in range(i+1, size):
+            if numbers[i]*numbers[j] > result:
+                result = numbers[i]*numbers[j]
 
     return result
 
-result = pairwiseProduct()
-print(result)
+
+def main():
+    n = int(input())
+    a = [int(x) for x in input().split()]
+    assert(len(a) == n)
+
+    result = pairwiseProduct(n, a)
+    print(result)
+
+main()
