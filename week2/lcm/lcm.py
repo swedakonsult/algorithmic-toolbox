@@ -21,9 +21,29 @@ def lcm_naive(a, b):
 # LCM(a,b) x GCD(a,b) = a x b
 def lcm_fast(a, b):
     gcd = gcd_euclidean(a, b)
-    lcm = (a * b) / gcd
+    ab = a * b
+    if gcd == 0:
+        return ab
+    lcm = ab / gcd
 
     return int(lcm)
+
+
+def stress_test():
+    import random
+
+    while True:
+        a = random.randint(0, 10000)
+        b = random.randint(0, 10000)
+        print(a, b)
+
+        result = lcm_naive(a, b)
+        result2 = lcm_fast(a, b)
+        if result != result2:
+            print("Wrong answer:", result, " ", result2)
+            break
+        else:
+            print('OK')
 
 
 def main(input_n):
@@ -33,5 +53,8 @@ def main(input_n):
 
 if __name__ == '__main__':
     input_r = sys.stdin.read()
-    main(input_r)
+    if 'stress' in input_r:
+        stress_test()
+    else:
+        main(input_r)
 
