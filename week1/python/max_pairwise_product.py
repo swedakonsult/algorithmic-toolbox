@@ -1,6 +1,6 @@
 # Uses python3
 
-def pairwiseProduct(size, numbers):
+def pairwiseProduct(size, numbers, debug = False):
     result = 0
 
     for i in range(0, size):
@@ -8,9 +8,11 @@ def pairwiseProduct(size, numbers):
             if numbers[i]*numbers[j] > result:
                 result = numbers[i]*numbers[j]
 
+    if debug:
+        print("[", numbers[i], "*", numbers[j], "=", result, end = ']')
     return result
 
-def pairwiseProductFast1(size, numbers):
+def pairwiseProductFast1(size, numbers, debug = False):
     max_index = -1
     for i in range(0, size):
         if max_index == -1 or numbers[i] > numbers[max_index]:
@@ -18,13 +20,43 @@ def pairwiseProductFast1(size, numbers):
 
     max_index2 = -1
     for j in range(0, size):
-        if (numbers[j] != numbers[max_index]) and (max_index2 == -1 or numbers[j] > numbers[max_index2]):
+        if (j != max_index) and (max_index2 == -1 or numbers[j] > numbers[max_index2]):
             max_index2 = j
 
-    return numbers[max_index] * numbers[max_index2]
+    result = numbers[max_index] * numbers[max_index2]
+
+    if debug:
+        print("[", numbers[max_index], "*", numbers[max_index2], "=", result, end = ']')
+    return result
+
+def stressTest():
+    import random
+
+    while True:
+        n = random.randint(2,12)
+        print(n)
+        a = [random.randint(0, 100000) for i in range(0, n)]
+        for i in range(0, n):
+            print(a[i], end = ' ')
+
+        print('')
+        result = pairwiseProduct(n, a)
+        result2 = pairwiseProductFast1(n, a)
+        if result != result2:
+            print("Wrong answer:", result, " ", result2)
+            break;
+        else:
+            print('OK')
 
 def main():
-    n = int(input())
+    input_n = input()
+    if len(input_n) == 0:
+        stressTest()
+        return
+
+    assert(' ' not in input_n)
+
+    n = int(input_n)
     a = [int(x) for x in input().split()]
     assert(len(a) == n)
 
