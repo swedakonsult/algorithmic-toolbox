@@ -37,7 +37,7 @@ def get_fibonacci_last_digit_fast(n):
     minustwo = 0
 
     for _ in range(n - 2):
-        minustwo, minusone = minusone, minustwo + minusone
+        minustwo, minusone = minusone, (minustwo + minusone) % 10
 
     return (minusone + minustwo) % 10
 
