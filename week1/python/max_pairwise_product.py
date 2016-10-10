@@ -50,11 +50,12 @@ def stressTest():
 
 def main():
     input_n = input()
-    if len(input_n) == 0:
+    assert(len(input_n) != 0)
+    assert(' ' not in input_n)
+
+    if 'stress' in input_n:
         stressTest()
         return
-
-    assert(' ' not in input_n)
 
     n = int(input_n)
     a = [int(x) for x in input().split()]
