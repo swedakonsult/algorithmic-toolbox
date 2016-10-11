@@ -29,17 +29,21 @@ def find_pisano_period(n, m, debug=False):
 # find the '01' pattern, iterating from n = 0
     previous = 0
     current = 1
+    all_fibonacci = [0, 1]
+    mod_c = 1 % m
 
     for i in range(n - 1):
         previous, current = current, previous + current
-        mod_p = previous % m
+        all_fibonacci.append(current)
+        mod_p = mod_c
         mod_c = current % m
         if debug:
             print(i, end=',')
         if mod_p == 0 and mod_c == 1:
             # found the period of Pisano
-            print('')
-            return i + 1, 0
+            if debug:
+                print('')
+            return i + 1, all_fibonacci
 
     print('')
     return 0, mod_c
@@ -66,6 +70,10 @@ def get_fibonacci_huge_fast(n, m, debug=False):
 
     previous = 0
     current = 1
+    if res != 0 and len(res) > n_snubbed:
+        if debug:
+            print('using existing fibonacci')
+        return res[n_snubbed] % m
 
     for _ in range(n_snubbed - 1):
         previous, current = current, previous + current
@@ -120,7 +128,7 @@ if __name__ == '__main__':
         if len(input_r) < 7:
             stress_test('', True)
         else:
-            stress_test(input_r[6:], True)
-        # main(input_r[:-6], False, True)
+            # stress_test(input_r[6:], True)
+            main(input_r[6:], False, True)
     else:
         main(input_r)
