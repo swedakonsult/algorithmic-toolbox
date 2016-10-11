@@ -21,7 +21,7 @@ def lcm_naive(a, b):
 # LCM(a,b) x GCD(a,b) = a x b
 def lcm_fast(a, b):
     gcd = gcd_euclidean(a, b)
-    print('gcd',gcd)
+    # print('gcd',gcd)
     if gcd == 0:
         return a * b
     if a < b:
