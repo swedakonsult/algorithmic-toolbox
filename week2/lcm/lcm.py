@@ -19,17 +19,21 @@ def lcm_naive(a, b):
 
 
 # LCM(a,b) x GCD(a,b) = a x b
-def lcm_fast(a, b):
+def lcm_fast(a, b, debug=False):
     gcd = gcd_euclidean(a, b)
-    # print('gcd',gcd)
+    if debug:
+        print('gcd', gcd)
     if gcd == 0:
         return a * b
     if a < b:
-        small = b / gcd
+        small = int(b / gcd)
         lcm = a * small
     else:
-        small = a / gcd
+        small = int(a / gcd)
         lcm = b * small
+
+    if debug:
+        print('small', small)
 
     return int(lcm)
 
@@ -62,12 +66,12 @@ def stress_test(input_n=''):
             break
 
 
-def main(input_n, naive=False):
+def main(input_n, naive=False, debug=False):
     a, b = map(int, input_n.split())
     if naive:
         print(lcm_naive(a, b))
     else:
-        print(lcm_fast(a, b))
+        print(lcm_fast(a, b, debug))
 
 if __name__ == '__main__':
     input_r = sys.stdin.read()
@@ -76,6 +80,8 @@ if __name__ == '__main__':
             stress_test()
         else:
             stress_test(input_r[7:])
+    elif 'debug' in input_r:
+        main(input_r[:-6], False, True)
     else:
         main(input_r)
 
