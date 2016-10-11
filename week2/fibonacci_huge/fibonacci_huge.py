@@ -34,7 +34,8 @@ def find_pisano_period(n, m, debug=False):
 
     for i in range(n - 1):
         previous, current = current, previous + current
-        all_fibonacci.append(current)
+        if i < 90628:
+            all_fibonacci.append(current)
         mod_p = mod_c
         mod_c = current % m
         if debug:
