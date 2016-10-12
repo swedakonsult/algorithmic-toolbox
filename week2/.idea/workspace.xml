@@ -4,6 +4,8 @@
     <list default="true" id="eac20bcb-5ed3-488e-b463-ae73cabb63e4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../week1/python/max_pairwise_product.py" afterPath="$PROJECT_DIR$/../week1/python/max_pairwise_product.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fibonacci_huge/fibonacci_huge.py" afterPath="$PROJECT_DIR$/fibonacci_huge/fibonacci_huge.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fibonacci_last_digit/fibonacci_last_digit.py" afterPath="$PROJECT_DIR$/fibonacci_last_digit/fibonacci_last_digit.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fibonacci_sum_last_digit/fibonacci_sum_last_digit.py" afterPath="$PROJECT_DIR$/fibonacci_sum_last_digit/fibonacci_sum_last_digit.py" />
     </list>
     <ignored path="week2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,8 +29,8 @@
       <file leaf-file-name="fibonacci.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fibonacci/fibonacci.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -37,8 +39,8 @@
       <file leaf-file-name="fibonacci_last_digit.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fibonacci_last_digit/fibonacci_last_digit.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -57,24 +59,30 @@
       <file leaf-file-name="lcm.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lcm/lcm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fibonacci_sum_last_digit.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fibonacci_sum_last_digit/fibonacci_sum_last_digit.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding>
-                <marker date="1476148207000" expanded="true" signature="188:295" ph="..." />
-                <marker date="1476148207000" expanded="true" signature="360:664" ph="..." />
-                <marker date="1476148207000" expanded="true" signature="482:535" ph="..." />
-                <marker date="1476148207000" expanded="true" signature="1413:1679" ph="..." />
-                <marker date="1476148207000" expanded="true" signature="1472:1578" ph="..." />
+                <element signature="e#15#25#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fibonacci_huge.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fibonacci_huge.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fibonacci_huge/fibonacci_huge.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+            <state relative-caret-position="165">
+              <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -101,12 +109,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/fibonacci/fibonacci.py" />
-        <option value="$PROJECT_DIR$/fibonacci_last_digit/fibonacci_last_digit.py" />
         <option value="$PROJECT_DIR$/gcd/gcd.py" />
         <option value="$PROJECT_DIR$/lcm/__init__.py" />
         <option value="$PROJECT_DIR$/gcd/__init__.py" />
         <option value="$PROJECT_DIR$/lcm/lcm.py" />
+        <option value="$PROJECT_DIR$/fibonacci_last_digit/fibonacci_last_digit.py" />
         <option value="$PROJECT_DIR$/fibonacci_huge/fibonacci_huge.py" />
+        <option value="$PROJECT_DIR$/fibonacci_sum_last_digit/fibonacci_sum_last_digit.py" />
       </list>
     </option>
   </component>
@@ -187,6 +196,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="gcd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="week2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="week2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fibonacci_sum_last_digit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -771,14 +794,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fibonacci/fibonacci.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gcd/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -803,10 +818,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/fibonacci/fibonacci.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/fibonacci_last_digit/fibonacci_last_digit.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -821,23 +844,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lcm/lcm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
-          <folding>
-            <marker date="1476148207000" expanded="true" signature="188:295" ph="..." />
-            <marker date="1476148207000" expanded="true" signature="360:664" ph="..." />
-            <marker date="1476148207000" expanded="true" signature="482:535" ph="..." />
-            <marker date="1476148207000" expanded="true" signature="1413:1679" ph="..." />
-            <marker date="1476148207000" expanded="true" signature="1472:1578" ph="..." />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fibonacci_huge/fibonacci_huge.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        <state relative-caret-position="165">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fibonacci_sum_last_digit/fibonacci_sum_last_digit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
