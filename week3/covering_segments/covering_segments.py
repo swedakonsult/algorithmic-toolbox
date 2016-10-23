@@ -18,17 +18,17 @@ def find_matches(segments, points, debug=True):
         points.append(min_right.end)
     segs = segments[1:]
     for i, s in enumerate(segs):
-        # TODO: this brings back the previous min_right for some reason - why?
         if debug:
             print('compare', min_right, 's:', s.start)
         if s.start <= min_right.end:
             continue
         if debug:
             print(min_right.end, '<', s.start)
-        find_matches(segs[i:], points)
+        find_matches(segs[i:], points, debug)
+        break
 
 
-def optimal_points(segments, debug=True):
+def optimal_points(segments, debug=False):
     points = []
     # write your code here
     sorted_segs = sorted(segments, key=lambda seg: seg.end)
