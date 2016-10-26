@@ -9,17 +9,27 @@ maxDigit ← −∞ for digit in Digits:
 if digit ≥ maxDigit: maxDigit ← digit
 append maxDigit to answer
 remove maxDigit from Digits return answer'''
+
+
 def largest_number(a):
     # write your code here
     maxDigit = 0
-    res = sorted(a, reverse=True, key=lambda number: math.floor(int(number)/100) if int(number) >= 100 else math.floor(int(number)/10) if int(number) >= 10 else int(number))
+    res = sorted(a, reverse=True,
+                 key=lambda number: math.floor(int(number) / 100) if int(number) >= 100 else math.floor(
+                     int(number) / 10) if int(number) >= 10 else int(number))
+    # TODO: doesn't work for single digit comparing to integers with a smaller second digit
+    # TODO: if(current.len > 1 && next.len == 1)
 
     # print(res)
     return "".join(res)
 
 
-if __name__ == '__main__':
-    input = sys.stdin.read()
-    data = input.split()
+def main(input_m):
+    data = input_m.split()
     a = data[1:]
-    print(largest_number(a))
+    return largest_number(a)
+
+
+if __name__ == '__main__':
+    input_m = sys.stdin.read()
+    print(main(input_m))
